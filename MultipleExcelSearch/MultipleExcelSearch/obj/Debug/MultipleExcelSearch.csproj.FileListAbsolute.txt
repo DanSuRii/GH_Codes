@@ -1,0 +1,2 @@
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\bin\Debug\MultipleExcelSearch.exe.config
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.csproj.ResolveComReference.cache
