@@ -1,2 +1,10 @@
 C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\bin\Debug\MultipleExcelSearch.exe.config
 C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.csproj.ResolveComReference.cache
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.csprojResolveAssemblyReference.cache
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.Form1.resources
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.Properties.Resources.resources
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.csproj.GenerateResource.Cache
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\bin\Debug\MultipleExcelSearch.exe
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\bin\Debug\MultipleExcelSearch.pdb
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.exe
+C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\MultipleExcelSearch\MultipleExcelSearch\obj\Debug\MultipleExcelSearch.pdb

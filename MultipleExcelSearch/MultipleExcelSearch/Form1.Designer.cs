@@ -34,9 +34,6 @@
             this.listFiles = new System.Windows.Forms.ListView();
             this.FileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Path = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listResult = new System.Windows.Forms.ListView();
-            this.File = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Reference = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddFile = new System.Windows.Forms.Button();
@@ -45,6 +42,11 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.treeResult = new System.Windows.Forms.TreeView();
             this.bMultiThread = new System.Windows.Forms.CheckBox();
+            this.File = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Reference = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listInProgress = new System.Windows.Forms.ListView();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SuchenBegriff
@@ -96,26 +98,6 @@
             // 
             this.Path.Text = "Path";
             // 
-            // listResult
-            // 
-            this.listResult.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.File,
-            this.Reference});
-            this.listResult.Location = new System.Drawing.Point(453, 27);
-            this.listResult.Name = "listResult";
-            this.listResult.Size = new System.Drawing.Size(281, 177);
-            this.listResult.TabIndex = 3;
-            this.listResult.UseCompatibleStateImageBehavior = false;
-            this.listResult.View = System.Windows.Forms.View.Details;
-            // 
-            // File
-            // 
-            this.File.Text = "File";
-            // 
-            // Reference
-            // 
-            this.Reference.Text = "Reference";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -136,7 +118,7 @@
             // 
             // btnAddFile
             // 
-            this.btnAddFile.Location = new System.Drawing.Point(26, 395);
+            this.btnAddFile.Location = new System.Drawing.Point(341, 172);
             this.btnAddFile.Name = "btnAddFile";
             this.btnAddFile.Size = new System.Drawing.Size(75, 23);
             this.btnAddFile.TabIndex = 5;
@@ -146,12 +128,13 @@
             // 
             // btnAddFolder
             // 
-            this.btnAddFolder.Location = new System.Drawing.Point(329, 395);
+            this.btnAddFolder.Location = new System.Drawing.Point(198, 172);
             this.btnAddFolder.Name = "btnAddFolder";
             this.btnAddFolder.Size = new System.Drawing.Size(88, 23);
             this.btnAddFolder.TabIndex = 5;
             this.btnAddFolder.Text = "AddFolder";
             this.btnAddFolder.UseVisualStyleBackColor = true;
+            this.btnAddFolder.Visible = false;
             this.btnAddFolder.Click += new System.EventHandler(this.btnAddFolder_Click);
             // 
             // openFileDialog1
@@ -162,9 +145,10 @@
             // 
             // treeResult
             // 
-            this.treeResult.Location = new System.Drawing.Point(453, 210);
+            this.treeResult.Dock = System.Windows.Forms.DockStyle.Right;
+            this.treeResult.Location = new System.Drawing.Point(498, 0);
             this.treeResult.Name = "treeResult";
-            this.treeResult.Size = new System.Drawing.Size(281, 179);
+            this.treeResult.Size = new System.Drawing.Size(281, 605);
             this.treeResult.TabIndex = 6;
             this.treeResult.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.treeResult_MouseDoubleClick);
             // 
@@ -178,23 +162,67 @@
             this.bMultiThread.Text = "Multithread";
             this.bMultiThread.UseVisualStyleBackColor = true;
             // 
+            // File
+            // 
+            this.File.Text = "File";
+            // 
+            // Reference
+            // 
+            this.Reference.Text = "Reference";
+            // 
+            // listInProgress
+            // 
+            this.listInProgress.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.File,
+            this.Reference});
+            this.listInProgress.Enabled = false;
+            this.listInProgress.Location = new System.Drawing.Point(26, 480);
+            this.listInProgress.MultiSelect = false;
+            this.listInProgress.Name = "listInProgress";
+            this.listInProgress.Scrollable = false;
+            this.listInProgress.Size = new System.Drawing.Size(390, 121);
+            this.listInProgress.TabIndex = 3;
+            this.listInProgress.UseCompatibleStateImageBehavior = false;
+            this.listInProgress.View = System.Windows.Forms.View.Tile;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(149, 395);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(124, 23);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "DeleteFiles";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 457);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 17);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Search in Progress";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 452);
+            this.ClientSize = new System.Drawing.Size(779, 605);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bMultiThread);
             this.Controls.Add(this.treeResult);
             this.Controls.Add(this.btnAddFolder);
             this.Controls.Add(this.btnAddFile);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listResult);
+            this.Controls.Add(this.listInProgress);
             this.Controls.Add(this.listFiles);
             this.Controls.Add(this.btnSuchen);
             this.Controls.Add(this.SuchenText);
             this.Controls.Add(this.SuchenBegriff);
+            this.Controls.Add(this.btnDelete);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Multiple Excel Sucher";
@@ -212,17 +240,19 @@
         private System.Windows.Forms.ListView listFiles;
         private System.Windows.Forms.ColumnHeader FileName;
         private System.Windows.Forms.ColumnHeader Path;
-        private System.Windows.Forms.ListView listResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ColumnHeader File;
-        private System.Windows.Forms.ColumnHeader Reference;
         private System.Windows.Forms.Button btnAddFile;
         private System.Windows.Forms.Button btnAddFolder;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TreeView treeResult;
         private System.Windows.Forms.CheckBox bMultiThread;
+        private System.Windows.Forms.ColumnHeader File;
+        private System.Windows.Forms.ColumnHeader Reference;
+        private System.Windows.Forms.ListView listInProgress;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label3;
     }
 }
 
