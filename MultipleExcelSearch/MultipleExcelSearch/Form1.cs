@@ -653,7 +653,10 @@ namespace MultipleExcelSearch
 
             //lock (arrExcels[Pos].objSync)
             {
-                return arrExcels[Pos].oXL.Workbooks.Open(strPath, ReadOnly: true);
+                //return arrExcels[Pos].oXL.Workbooks.Open(strPath, ReadOnly: true);
+                Excel._Application oApp = arrExcels[Pos].oXL;
+                Excel.Workbooks oWB = oApp.Workbooks;
+                return oWB.Open(strPath, ReadOnly: true);
             }
         }
 

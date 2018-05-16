@@ -99,6 +99,20 @@ public:
 	}
 };
 
+template<class CompSrc, class CompDest, class Pred>
+ref class CPredicate
+{
+	CompSrc^ compSrc;
+	Pred pred;
+public:
+
+	CPredicate(CompSrc^ rhs, Pred& rhsPred) :compSrc(rhs), pred(rhsPred) {}
+	bool DoComp(CompDest^ rhs)
+	{
+		return pred(compSrc, rhs);
+	}
+};
+
 inline System::Void RechnungenViewer::mainForm::SearchText_TextChanged(System::Object ^ sender, System::EventArgs ^ e)
 {
 	auto searchText = SearchText->Text;
@@ -117,11 +131,20 @@ inline System::Void RechnungenViewer::mainForm::SearchText_TextChanged(System::O
 			//c++cli does not support Lambda
 			//auto func = gcnew CompareLvItem(FnCompareLvItem);
 			//auto expFind = [ searchText ](ListViewItem^ item) { item };
-
 			FileList->Items->AddRange (
 				RGExp->Items->FindAll(
 					gcnew Predicate<ListViewItem^>( gcnew CCompLvItem(searchText), &CCompLvItem::Comp ))->ToArray()
 			);
+			/*
+			auto Compareand = []()->bool
+			{
+				return true;
+			}
+			FileList->Items->AddRange (
+				RGExp->Items->FindAll(
+					gcnew Predicate<ListViewItem^>( gcnew CPredicate<System::String^,ListView^, bool()>(searchText), &CCompLvItem::Comp ))->ToArray()
+			);
+			*/
 
 			//FileList->Items->
 		}

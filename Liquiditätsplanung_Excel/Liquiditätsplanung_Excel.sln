@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquiditätsplanung_Excel", "Liquiditätsplanung_Excel\Liquiditätsplanung_Excel.csproj", "{630E438E-38C2-4DBD-BED6-281A3224E406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperExcel", "HelperExcel\HelperExcel.csproj", "{AD3C2B37-9AA2-4034-B4F0-83D0C00A9977}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630E438E-38C2-4DBD-BED6-281A3224E406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630E438E-38C2-4DBD-BED6-281A3224E406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630E438E-38C2-4DBD-BED6-281A3224E406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630E438E-38C2-4DBD-BED6-281A3224E406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3C2B37-9AA2-4034-B4F0-83D0C00A9977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3C2B37-9AA2-4034-B4F0-83D0C00A9977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3C2B37-9AA2-4034-B4F0-83D0C00A9977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3C2B37-9AA2-4034-B4F0-83D0C00A9977}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4F1A465-9057-4C25-B71E-CF3561F8FA89}
+	EndGlobalSection
+EndGlobal

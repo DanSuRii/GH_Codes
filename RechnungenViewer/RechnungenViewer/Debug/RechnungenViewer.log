@@ -1,0 +1,21 @@
+﻿  mainForm.cpp
+mainForm.cpp(86): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+mainForm.cpp(143): error C3923: "RechnungenViewer::mainForm::SearchText_TextChanged::<lambda_04521ab55988b207ec1cee8da7f11a2a>": Definitionen für lokale Klassen, Strukturen oder Unions sind in einer Memberfunktion einer verwaltet-Klasse nicht zulässig.
+mainForm.cpp(144): error C2146: Syntaxfehler: Fehlendes ";" vor Bezeichner "FileList"
+mainForm.cpp(105): error C3699: "^": Diese Referenzierung kann nicht für den Typ "System::String ^" verwendet werden.
+  mainForm.cpp(105): note: Der Compiler ersetzt "^" durch interior_ptr", um die Analyse fortzusetzen.
+  mainForm.cpp(146): note: Siehe Verweis auf die Instanziierung der gerade kompilierten Klassen-template "CPredicate<System::String ^,System::Windows::Forms::ListView ^,bool (void)>".
+mainForm.cpp(105): error C3160: "cli::interior_ptr<CompSrc>": Ein Datenmember einer verwaltet-Klasse kann nicht diesen Typ aufweisen.
+          with
+          [
+              CompSrc=System::String ^
+          ]
+  mainForm.cpp(105): note: pointer (innen) kann nie im GC-Heap zugeordnet werden.
+mainForm.cpp(106): error C2207: "CPredicate<CompSrc,CompDest,Pred>::pred": Ein Member einer Klassenvorlage kann keinen Funktionstyp abrufen.
+mainForm.cpp(109): error C3699: "^": Diese Referenzierung kann nicht für den Typ "System::String ^" verwendet werden.
+  mainForm.cpp(109): note: Der Compiler ersetzt "^" durch interior_ptr", um die Analyse fortzusetzen.
+mainForm.cpp(110): error C3699: "^": Diese Referenzierung kann nicht für den Typ "System::Windows::Forms::ListView ^" verwendet werden.
+  mainForm.cpp(110): note: Der Compiler ersetzt "^" durch interior_ptr", um die Analyse fortzusetzen.
+mainForm.cpp(146): error C3673: "CPredicate<System::String ^,System::Windows::Forms::ListView ^,bool (void)>": Die Klasse hat keinen Kopierkonstruktor.
+mainForm.cpp(146): error C3352: "bool CCompLvItem::Comp(System::Windows::Forms::ListViewItem ^)": Die angegebene Funktion stimmt nicht mit dem Delegattyp "bool (System::Windows::Forms::ListViewItem ^)" überein.
+mainForm.cpp(146): error C2227: Links von "->ToArray" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.

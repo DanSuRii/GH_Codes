@@ -23,6 +23,9 @@ namespace ExcelRunner
             string strRef = args[1];
 
             Excel.Application oXL = new Excel.Application();
+            oXL.Visible = true;
+            oXL.UserControl = true;
+
             Excel._Workbook oWB = oXL.Workbooks.Open(strPath);
 
             if (null == oWB)
@@ -37,13 +40,11 @@ namespace ExcelRunner
 
             oXL.Goto(oRG);
 
-            oXL.Visible = true;
-            oXL.UserControl = true;
 
             //oXL->Wait();
             //oRG.Clear();
-            oWB.Close();
-            oXL.Quit();
+            //oWB.Close();
+            //oXL.Quit();
         }
     }
 }

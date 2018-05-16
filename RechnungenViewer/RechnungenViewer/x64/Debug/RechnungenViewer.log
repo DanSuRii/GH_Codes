@@ -1,0 +1,10 @@
+﻿  main.cpp
+main.cpp(51): warning C4101: "ap": Unreferenzierte lokale Variable
+  mainForm.cpp
+mainForm.cpp(86): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+  RGFolderExplorer.cpp
+  Code wird generiert...
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  main.obj : /DEBUG:FASTLINK wird nicht unterstützt, wenn verwalteter Code vorhanden ist; Link wird mit /DEBUG:FULL neu gestartet
+  RechnungenViewer.vcxproj -> C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\RechnungenViewer\x64\Debug\RechnungenViewer.exe
+  RechnungenViewer.vcxproj -> C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\RechnungenViewer\x64\Debug\RechnungenViewer.pdb (Partial PDB)

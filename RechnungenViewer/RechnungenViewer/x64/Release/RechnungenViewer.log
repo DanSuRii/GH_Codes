@@ -1,0 +1,8 @@
+﻿  main.cpp
+  mainForm.cpp
+mainForm.cpp(86): warning C4800: "int": Variable wird auf booleschen Wert ("True" oder "False") gesetzt (Auswirkungen auf Leistungsverhalten möglich)
+  RGFolderExplorer.cpp
+  Code wird generiert...
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  RechnungenViewer.vcxproj -> C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\RechnungenViewer\x64\Release\RechnungenViewer.exe
+  RechnungenViewer.vcxproj -> C:\Users\A.Roennburg\Documents\GitHub\GH_Codes\RechnungenViewer\x64\Release\RechnungenViewer.pdb (Full PDB)
